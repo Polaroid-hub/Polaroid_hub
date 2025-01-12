@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polaroid_hub -  Make Memories With Us ✨</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="https://via.placeholder.com/32x32.png?text=P" type="image/png">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+ 
+</head>
+<body class="light-mode">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Polaroid Hub Logo" class="polaroid-logo">
+        <span class="brand-name">Polaroid_hub</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#product">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#offer-zone">Offer Zone</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="btn btn-light" onclick="toggleTheme()">🌞/🌜</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div>
+      <h1>Welcome to Polaroid_hub</h1>
+      <p>Make Memories With Us ✨</p>
+    </div>
+  </header>
+
+    <!-- About Section -->
+  
+<section id="about" class="container my-5">
+  <h2 class="text-center mb-4">About Us</h2>
+  <div class="row align-items-center">
+    <div class="col-md-2 text-center">
+      <img src="images/logo.gif" alt="About Us Icon" class="img-fluid" style="max-width: 200px;">
+    </div>
+    <div class="col-md-10">
+  <p id="about-text" class="text-center">
+    Polaroid_hub is a platform where you can relive your favorite memories by printing them in a classic Polaroid style.
+    From beaches to cityscapes, we make your moments timeless. Whether it’s family gatherings, special events, or
+    unforgettable vacations, our Polaroids preserve the essence of your happiest moments. 
+    <span id="dots">...</span>
+    <span id="more" style="display: none;">
+      Our mission is to bring back the nostalgia of the Polaroid camera with a modern touch. We offer a variety of 
+      products, from custom Polaroid prints to personalized ring albums. With Polaroid_hub, your memories are just a click away 
+      from becoming tangible. 
+      We take pride in providing high-quality prints and customizations that match your unique style. 
+      Whether you want to decorate your home, make a thoughtful gift, or simply save memories for the future, we've got you covered.
+    </span>
+  </p>
+  <button id="read-more-btn" class="btn btn-primary mx-auto d-block">Read More</button>
+</div>
+</section>
+
+  
+  <!-- Carousel Section -->
+  <section class="carousel-section my-5">
+    <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/1.jpg" class="d-block w-100" alt="Offer 1">
+        </div>
+        <div class="carousel-item">
+          <img src="images/2.jpg" class="d-block w-100" alt="Offer 2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/3.jpg" class="d-block w-100" alt="Offer 3">
+        </div>
+        <div class="carousel-item">
+          <img src="images/4.jpg" class="d-block w-100" alt="Offer 4">
+        </div>
+        <div class="carousel-item">
+          <img src="images/5.jpg" class="d-block w-100" alt="Offer 5">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#offerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#offerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="product" class="container my-5">
+    <h2 class="text-center mb-4">Our Products</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="images/Img2.png" alt="Polaroid Photos">
+          <h5>Polaroid Photos</h5>
+          <p>Get a set of 9 beautiful Polaroid photos, customizable with your favorite memories.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="images/Img1.png" alt="Ring Album">
+          <h5>Customizable Ring Album</h5>
+          <p>Create your own personalized ring album. A perfect way to preserve your memories!</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="images/pro1.jpg" alt="Mini Polaroid">
+          <h5>Mini Polaroid</h5>
+          <p>Capture memories with our cute mini Polaroid Pics. Perfect for on-the-go snapshots!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="container my-5">
+    <h2 class="text-center mb-4">Gallery</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="polaroid-card">
+          <img src="images/Img4.png" alt="Happy Family">
+          <p>Happy Family</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="polaroid-card">
+          <img src="images/Img5.png" alt="Wedding Anniversary">
+          <p>Wedding Anniversary Memories</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="polaroid-card">
+          <img src="images/Img1.png" alt="Ring Album">
+          <p>Ring Album</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="polaroid-card">
+          <img src="images/Img2.png" alt="Polaroid Pics">
+          <p><br>Polaroid Pics</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="polaroid-card">
+          <img src="images/Img6.png" alt="Baby Shower">
+         <p>Birthday memories</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="polaroid-card">
+          <img src="images/Img8.jpg" alt="Graduation">
+         <p><br>Mini Polaroid</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offer Zone Section -->
+  <section id="offer-zone" class="container my-5">
+    <h2 class="text-center mb-4">Offer Zone</h2>
+    <div class="text-center">
+      <img src="images/Offer.png" alt="Offer Zone" class="img-fluid mb-4">
+    </div>
+    <p class="text-center">Exciting offers await! Check out our special deals on Polaroid prints and more.</p>
+  </section>
+
+
+  <!-- Happy Customers -->
+  <section id="happy-customers" class="container my-5">
+    <h2 class="text-center mb-4">Happy Customers</h2>
+    <p class="text-center">See what our customers have to say about Polaroid_hub! More feedback will be uploaded soon.</p>
+    <div class="video-container">
+      <div class="mb-4">
+        <video class="customer-video w-100" muted loop>
+          <source src="video/1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="text-center">
+          <h5></h5>
+          <p> Perfect for gifting.</p>
+        </div>
+      </div>
+      <div class="mb-4">
+        <video class="customer-video w-100" muted loop>
+          <source src="video/2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="text-center">
+          <h5></h5>
+          <p>Polaroid_hub made my memories timeless. Totally worth it!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <p class="text-center">Email: polaroidshub123@gmail.com</p>
+    <p class="text-center">WhatsApp: +91 9645023536</p>
+    <p class="text-center">Instagram: <a href="https://www.instagram.com/polaroids_hub?igshid=ZThyd2xvdDVsMXJ0" target="_blank">@polaroids_hub</a></p>
+    <p class="text-center">YouTube: <a href="https://www.youtube.com/@Polaroids_hub" target="_blank">@Polaroids_hub</a></p>
+  </section>  
+
+  <!-- Feedback Button -->
+  <section class="text-center mb-5">
+    <button class="feedback-btn" onclick="window.location.href='mailto:polaroidshub123@gmail.com'">
+      Send Feedback
+    </button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 Polaroid_hub. All rights reserved.</p>
+      <p>Owned and managed by <strong>Haritha</strong>.</p>
+      <p>Follow us on <a href="https://www.instagram.com/polaroids_hub?igshid=ZThyd2xvdDVsMXJ0" target="_blank" class="text-white">Instagram</a></p>
+    </div>
+  </footer>
+  
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>   
+
+</body>
+</html>
