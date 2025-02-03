@@ -48,12 +48,38 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       },
       {
-        threshold: 0.5, // Play when 50% of the video is visible
+        threshold: 0.6, // Play when 50% of the video is visible
       }
     );
   
     videos.forEach((video) => {
       observer.observe(video);
     });
+  });
+  
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var myCarousel = new bootstrap.Carousel(document.getElementById('offerCarousel'), {
+      interval: 5000, // Automatically change slide every 5 seconds
+      ride: 'carousel'
+    });
+  
+    var timelineBar = document.getElementById('timelineBar');
+    var carouselItems = document.querySelectorAll('.carousel-item');
+    var totalItems = carouselItems.length;
+  
+    // Reset the timeline bar when the slide changes
+    var resetTimelineBar = () => {
+      timelineBar.style.width = '0';
+      timelineBar.style.animation = 'none';
+      setTimeout(() => {
+        timelineBar.style.animation = 'moveBar 5s linear infinite';
+      }, 60); // Delay to re-trigger animation
+    };
+  
+    // Listen for slide change and reset the timeline bar
+    myCarousel._element.addEventListener('slide.bs.carousel', resetTimelineBar);
+  
   });
   
